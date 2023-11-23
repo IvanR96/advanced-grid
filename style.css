@@ -1,5 +1,10 @@
 h1{
     text-align: center;
+    color: white;
+}
+
+body{
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
 }
 .grid-container {
     resize: both;
@@ -9,17 +14,18 @@ h1{
     padding: 4px;
     justify-content: center;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(5, 1fr);
-  }
+    grid-template-columns: repeat(5, clamp(150px, 20%, 200px));
+}
+
   
-  .grid-item {
+.grid-item {
     background-color: #444;
     text-align: center;
     color: #ddd;
     font-family: sans-serif;
     font-size: 1.5rem;
     padding: 12px;
-  }
+}
   
   p {
     margin: 12px auto 24px;
